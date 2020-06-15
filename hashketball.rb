@@ -192,7 +192,7 @@ def player_numbers(team_name)
       game_hash[:home][:players].each  {|x|
         numbers << x[:number]
       }
-      numbers
+      return numbers
     end
      game_hash[:away][:team_name] == team_name
       game_hash[:away][:players].each {|x|
