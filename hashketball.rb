@@ -209,7 +209,7 @@ stats = {} #array to determine points scored
       if players == :players
         detail.each do |player_name_detail|
           if player == player_name_detail[:player_name]
-            points_scored << (player_name_detail[:points])
+            points_scored player_name_detail
           end
        end
     end
