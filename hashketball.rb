@@ -227,6 +227,7 @@ def big_shoe_rebounds
         detail.each do |player_name_detail|
           points = player_name_detail[:points]
         end
+        binding.pry
         points
       end
     end
