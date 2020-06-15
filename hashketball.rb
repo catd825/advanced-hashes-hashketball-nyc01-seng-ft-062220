@@ -132,19 +132,19 @@ end
 
 
 def num_points_scored(player) #pass through player
-points_scored = [] #array to determine points scored
+points_scored = 0
   game_hash.each do |location, key_hash|  #iterate over game hash
     key_hash.each do |players, detail|
       if players == :players
         detail.each do |player_name_detail|
           if player == player_name_detail[:player_name]
-            points_scored << (player_name_detail[:points])
+            points_scored = (player_name_detail[:points])
           end
        end
     end
   end
 end
-   points_scored.reduce
+   points_scored
 end
 
 
