@@ -189,13 +189,13 @@ end
 def player_numbers(team_name)
    numbers=[]
     if game_hash[:home][:team_name] == team_name
-      game_hash[:home][:players].each  {|x,y|
+      game_hash[:home][:players].each  {|x|
         numbers << x[:number]
       }
       numbers
     end
      game_hash[:away][:team_name] == team_name
-      game_hash[:away][:players].each {|x,y|
+      game_hash[:away][:players].each {|x|
         numbers << x[:number]
       }
      numbers
