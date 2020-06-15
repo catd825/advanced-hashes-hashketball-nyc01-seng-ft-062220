@@ -231,9 +231,6 @@ rebound = 0
             rebound = player_name_detail[:rebounds]
           end
         end
-        #binding.pry
-        #rebound
-        #shoe
       end
     end
   end
