@@ -195,7 +195,7 @@ def player_numbers(team_name)
       numbers
     end
      game_hash[:away][:team_name] == team_name
-      game_hash[:away][:players].each do {|x,y|
+      game_hash[:away][:players].each {|x,y|
         numbers << x[:number]
       }
      numbers
