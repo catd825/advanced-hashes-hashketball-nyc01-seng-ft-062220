@@ -219,7 +219,7 @@ end
 end
 
 
-def big_shoe_rebounds(player)
+def big_shoe_rebounds
   
   game_hash.each do |location, key_hash|
     key_hash.each do |players, detail|
