@@ -210,7 +210,7 @@ stats = {} #array to determine points scored
         detail.each do |player_name_detail|
           if player == player_name_detail[:player_name]
             stats = player_name_detail
-            binding.pry
+            #binding.pry
           end
        end
     end
