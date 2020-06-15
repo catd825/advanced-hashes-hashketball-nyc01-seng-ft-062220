@@ -237,7 +237,6 @@ rebound = 0
       end
     end
   end
-
 end
 
 #mason plumlee - 11 rebounds
