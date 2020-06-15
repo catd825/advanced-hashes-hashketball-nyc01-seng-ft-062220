@@ -220,13 +220,13 @@ end
 
 
 def big_shoe_rebounds
-points = 0  
+shoe = 0  
   game_hash.each do |location, key_hash|
     key_hash.each do |players, detail|
        if players == :players
         detail.each do |player_name_detail|
-          if points < player_name_detail[:points]
-            points = player_name_detail[:points]
+          if shoe < player_name_detail[:shoe]
+            shoe = player_name_detail[:shoe]
           end
         end
         binding.pry
