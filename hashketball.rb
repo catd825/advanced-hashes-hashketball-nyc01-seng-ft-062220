@@ -229,8 +229,8 @@ shoe = 0
             shoe = player_name_detail[:shoe]
           end
         end
-        binding.pry
         shoe
+        binding.pry
       end
     end
   end
