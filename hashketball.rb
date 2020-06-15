@@ -151,7 +151,7 @@ end
 
 
 def shoe_size(player)
-  size = [] #array to determine points scored
+  size = []
   game_hash.each do |location, key_hash|
     key_hash.each do |players, detail|
       if players == :players
@@ -179,9 +179,7 @@ end
 
 
 def team_names
-  
   [game_hash[:away][:team_name], game_hash[:home][:team_name]]
-  
 end
 
 
@@ -204,7 +202,7 @@ def player_numbers(team_name)
 
 
 
-def player_stats(player_name)
+def player_stats(player)
   stats={}
     if game_hash[:home][:players][0][:player_name]
     binding.pry
