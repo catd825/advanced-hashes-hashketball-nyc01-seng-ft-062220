@@ -228,10 +228,11 @@ rebound = 0
         detail.each do |player_name_detail|
           if shoe < player_name_detail[:shoe]
             shoe = player_name_detail[:shoe]
+            player_name_detail
+                    binding.pry
           end
         end
         shoe
-        binding.pry
       end
     end
   end
