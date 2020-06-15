@@ -226,7 +226,7 @@ points = 0
        if players == :players
         detail.each do |player_name_detail|
           if points > player_name_detail[:points]
-        #binding.pry
+            player_name_detail[:points]
         end
         binding.pry
         points
