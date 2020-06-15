@@ -203,10 +203,19 @@ def player_numbers(team_name)
 
 
 def player_stats(player)
-  stats={}
-    if game_hash[:home][:players][0][:player_name]
-    binding.pry
+stats = {} #array to determine points scored
+  game_hash.each do |location, key_hash|  #iterate over game hash
+    key_hash.each do |players, detail|
+      if players == :players
+        detail.each do |player_name_detail|
+          if player == player_name_detail[:player_name]
+            points_scored << (player_name_detail[:points])
+          end
+       end
     end
+  end
+end
+   points_scored.reduce
 end
 
 
