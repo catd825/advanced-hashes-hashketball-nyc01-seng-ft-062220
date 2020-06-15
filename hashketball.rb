@@ -225,7 +225,7 @@ points = 0
     key_hash.each do |players, detail|
        if players == :players
         detail.each do |player_name_detail|
-          if points > player_name_detail[:points]
+          if points < player_name_detail[:points]
             player_name_detail[:points]
           end
         end
