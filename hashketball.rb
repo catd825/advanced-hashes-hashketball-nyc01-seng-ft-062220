@@ -232,11 +232,12 @@ rebound = 0
           end
         end
         #binding.pry
-        rebound
-        shoe
+        #rebound
+        #shoe
       end
     end
   end
+  rebound
 end
 
 #mason plumlee - 11 rebounds
