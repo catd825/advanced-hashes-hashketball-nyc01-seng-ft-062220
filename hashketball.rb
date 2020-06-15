@@ -1,4 +1,6 @@
 # Write your code below game_hash
+require 'pry'
+
 def game_hash
   {
     home: {
@@ -127,3 +129,85 @@ def game_hash
 end
 
 # Write code here
+
+
+def num_points_scored(player) #pass through player
+points_scored = [] #array to determine points scored
+  game_hash.each do |location, key_hash|  #iterate over game hash
+    key_hash.each do |players, detail|
+      if players == :players
+        detail.each do |player_name_detail|
+          if player == player_name_detail[:player_name]
+            points_scored << (player_name_detail[:points])
+          end
+       end
+    end
+  end
+end
+   points_scored.reduce
+end
+
+
+
+
+def shoe_size(player)
+  size = [] #array to determine points scored
+  game_hash.each do |location, key_hash|
+    key_hash.each do |players, detail|
+      if players == :players
+        detail.each do |player_name_detail|
+          if player == player_name_detail[:player_name]
+            size << (player_name_detail[:shoe])
+          end
+       end
+    end
+  end
+end
+   size.reduce
+end
+
+
+
+def team_colors(team_name)
+  if game_hash[:home][:team_name] == team_name
+    return game_hash[:home][:colors]
+  end
+   game_hash[:away][:colors]
+end
+
+
+
+
+def team_names
+  
+  [game_hash[:away][:team_name], game_hash[:home][:team_name]]
+  
+end
+
+
+
+def player_numbers(team_name)
+   numbers=[]
+    if game_hash[:home][:team_name] == team_name
+      game_hash[:home][:players].each  {|x|
+        numbers << x[:number]
+      }
+      numbers
+    end
+     game_hash[:away][:team_name] == team_name
+      game_hash[:away][:players].each do {|x|
+        numbers << x[:number]
+      }
+     numbers
+  end
+
+
+
+
+def player_stats
+  
+end
+
+
+
+
