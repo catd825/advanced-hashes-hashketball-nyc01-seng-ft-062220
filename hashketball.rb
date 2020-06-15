@@ -131,9 +131,9 @@ end
 # Write code here
 
 
-def num_points_scored(player) #pass through player
+def num_points_scored(player) 
 points_scored = 0
-  game_hash.each do |location, key_hash|  #iterate over game hash
+  game_hash.each do |location, key_hash|  
     key_hash.each do |players, detail|
       if players == :players
         detail.each do |player_name_detail|
@@ -151,19 +151,19 @@ end
 
 
 def shoe_size(player)
-  size = []
+  size = 0
   game_hash.each do |location, key_hash|
     key_hash.each do |players, detail|
       if players == :players
         detail.each do |player_name_detail|
           if player == player_name_detail[:player_name]
-            size << (player_name_detail[:shoe])
+            size = (player_name_detail[:shoe])
           end
        end
     end
   end
 end
-   size.reduce
+   size
 end
 
 
@@ -239,7 +239,5 @@ rebound = 0
   end
   rebound
 end
-
-#mason plumlee - 11 rebounds
 
 
