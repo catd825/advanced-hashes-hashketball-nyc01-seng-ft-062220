@@ -226,9 +226,9 @@ points = ""
        if players == :players
         detail.each do |player_name_detail|
           points = player_name_detail[:points]
-        binding.pry
-        end
         #binding.pry
+        end
+        binding.pry
         points
       end
     end
