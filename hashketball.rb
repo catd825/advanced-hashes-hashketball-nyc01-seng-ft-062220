@@ -221,8 +221,11 @@ end
 
 def big_shoe_rebounds(player)
   
-  game_hash.each do ||
-  
+  game_hash.each do |location, key_hash|
+    key_hash.each do |players, detail|
+      
+      binding.pry
+    end
   end
 
 end
