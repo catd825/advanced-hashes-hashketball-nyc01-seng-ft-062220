@@ -230,7 +230,7 @@ shoe = 0
           end
         end
         binding.pry
-        points
+        shoe
       end
     end
   end
