@@ -220,7 +220,7 @@ end
 
 
 def big_shoe_rebounds
-  
+points = []  
   game_hash.each do |location, key_hash|
     key_hash.each do |players, detail|
        if players == :players
